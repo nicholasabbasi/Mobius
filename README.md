@@ -29,3 +29,10 @@ Bug Tracker: [Github](https://github.com/chbachman/Mobius/issues)
 * Knowledge - Not tracked, player knowledge
 * Currency - Doesn't carry over, but can speed up if used right.
 
+# Setting Up
+
+## Initial
+1. Clone the Repo
+2. Open it up in Unity
+3. Unity -> Assets -> Import Package -> Characters
+4. Unity -> Assets -> Import Package -> Characters
