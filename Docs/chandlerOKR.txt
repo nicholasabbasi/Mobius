@@ -1,0 +1,3 @@
+Movement of Character - Monday by 10PM
+Basic NPC Movement - Tuesday by 10PM
+Time Limit - Wednesday by 10PM
