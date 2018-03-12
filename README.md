@@ -32,7 +32,5 @@ Bug Tracker: [Github](https://github.com/chbachman/Mobius/issues)
 # Setting Up
 
 ## Initial
-1. Clone the Repo
-2. Open it up in Unity
-3. Unity -> Assets -> Import Package -> Characters
-4. Unity -> Assets -> Import Package -> Characters
+
+See [Git Instructions](Docs/Git\ Instructions.md)
