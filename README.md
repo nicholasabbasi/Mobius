@@ -33,4 +33,4 @@ Bug Tracker: [Github](https://github.com/chbachman/Mobius/issues)
 
 ## Initial
 
-See [Git Instructions](Docs/Git\ Instructions.md)
+See [Git Instructions](Docs/git_instructions.md)
