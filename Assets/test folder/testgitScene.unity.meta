@@ -1,6 +1,12 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:Assets/test folder/testgitScene.unity.meta
 guid: b2d6d43d1fb59f84889bed6925a5e704
 timeCreated: 1520887922
+=======
+guid: 428767f7e7125445ca713b2f17a4d37c
+folderAsset: yes
+timeCreated: 1520889728
+>>>>>>> 6d3cb552cae829999211c082ddcdf1bc42547ac2:Assets/Models.meta
 licenseType: Free
 DefaultImporter:
   externalObjects: {}
