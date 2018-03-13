@@ -51,6 +51,8 @@ To get the file to open, type: `pwd` in the terminal
 There will be some problems. To fix the import issues:
 
 `Unity -> Assets -> Import Package -> Characters`
+AND
+`Unity -> Assets -> Import Package -> Environment`
 
 Then import all.
 Open the Main Scene and hit play. You should be able to walk around in the world and see the current progress.
