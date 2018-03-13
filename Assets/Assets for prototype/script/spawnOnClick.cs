@@ -11,6 +11,7 @@ public class spawnOnClick : MonoBehaviour {
     {
         textbox2 = Instantiate(TextPrefab2, Spawnpoint2.position, Spawnpoint2.rotation);
         Destroy(SpawnText.textbox);
+        GateOpen.close = 0;
     }
 
 

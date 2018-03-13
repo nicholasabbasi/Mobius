@@ -6,7 +6,9 @@ public class SpawnText : MonoBehaviour {
 
     public Transform Spawnpoint;
     public GameObject TextPrefab;
+    public GameObject TextPrefab2;
     public static GameObject textbox;
+    public static int afterEvent = 0;
 
 
     
@@ -25,9 +27,17 @@ public class SpawnText : MonoBehaviour {
     {
          if (collision.CompareTag("player"))
          {
-        textbox = Instantiate(TextPrefab, Spawnpoint.position, Spawnpoint.rotation);
 
-        Pathfollower2.freeze = 1;
+            if (afterEvent == 0)
+            {
+                textbox = Instantiate(TextPrefab, Spawnpoint.position, Spawnpoint.rotation);
+
+            }
+            else {
+                textbox = Instantiate(TextPrefab2, Spawnpoint.position, Spawnpoint.rotation);
+            }
+
+            Pathfollower2.freeze = 1;
             PlayerMove.stopMove = 1;
         //Debug.Log("Yay spawn " + Pathfollower2.freeze);
 

@@ -28,21 +28,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!1 &1023965922111166
-GameObject:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 4771938524011262}
-  m_Layer: 0
-  m_Name: Spawnpoint (1)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
 --- !u!1 &1172208528547692
 GameObject:
   m_ObjectHideFlags: 1
@@ -55,7 +40,7 @@ GameObject:
   - component: {fileID: 114459853560760066}
   - component: {fileID: 114142929488568186}
   m_Layer: 5
-  m_Name: chat
+  m_Name: chat button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -95,22 +80,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!1 &1479110145579572
-GameObject:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 4018263737346448}
-  - component: {fileID: 114084306226754584}
-  m_Layer: 0
-  m_Name: emptyObjForButton
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
 --- !u!1 &1541930104246740
 GameObject:
   m_ObjectHideFlags: 0
@@ -138,7 +107,7 @@ GameObject:
   - component: {fileID: 114449416485096926}
   - component: {fileID: 114866004480242088}
   m_Layer: 5
-  m_Name: leave chat
+  m_Name: leave chat button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -178,47 +147,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4018263737346448
-Transform:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1479110145579572}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -629.6288, y: -296.1974, z: -126.97096}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 4771938524011262}
-  m_Father: {fileID: 224829952374795516}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &4771938524011262
-Transform:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1023965922111166}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 282.02878, y: 120.99512, z: 12.450081}
-  m_LocalScale: {x: 1.81001, y: 6.7251897, z: 31.52707}
-  m_Children: []
-  m_Father: {fileID: 4018263737346448}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &114084306226754584
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1479110145579572}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 70d64fb0c7280ef418a57b4531e768a5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Spawnpoint2: {fileID: 4771938524011262}
-  TextPrefab2: {fileID: 1310371081964132, guid: ca984e940f0a84f42b76e085dbd46fee,
-    type: 2}
 --- !u!114 &114142929488568186
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -258,8 +186,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 114084306226754584}
-        m_MethodName: spawnText
+      - m_Target: {fileID: 114168838288388834, guid: 667cfbf1f05861143a142c032f2defed,
+          type: 2}
+        m_MethodName: RestartGame
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -314,11 +243,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'how are you doing today?  testing is hard, i don''t want to do it any more.
-    I got to go to bed early.
-
-
-    Don''t talk to me too long. I am already tire of that.'
+  m_Text: Where are the bank robbers?
 --- !u!114 &114449416485096926
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -721,7 +646,6 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 224803102425708366}
-  - {fileID: 4018263737346448}
   m_Father: {fileID: 224273901205555006}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

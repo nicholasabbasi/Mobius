@@ -2,30 +2,33 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Pathfollower2 : MonoBehaviour {
+public class GateOpen : MonoBehaviour {
+
 
     public Transform[] path;
-    public float speed = 5.0f;
+    public float speed=1.0f;
     public float reachDist = 1.0f;
     public int currentPoint = 0;
 
-    public static int freeze;
+    public static int close;
 
-	// Use this for initialization
-	void Start () {
-        freeze = 0;
-
+    // Use this for initialization
+    void Start()
+    {
+        close = 1;
+        speed = 5.0f;
     }
-	
-	// Update is called once per frame
-	void Update () {
 
-      //  Debug.Log("xxxx"+freeze);
-       
-        
+    // Update is called once per frame
+    void Update()
+    {
+
+        //  Debug.Log("xxxx"+freeze);
+
+        //close -= 1;
         // Vector3 dir =  path[currentPoint].position - transform.position ;
-        
-        if (freeze == 0)
+
+        if (close == 0)
         {
 
             float dist = Vector3.Distance(path[currentPoint].position, transform.position);
@@ -38,35 +41,32 @@ public class Pathfollower2 : MonoBehaviour {
                 currentPoint++;
             }
 
-            if (currentPoint >= path.Length)
-            {
-                currentPoint = 0;
-           }
+            
         }
-        
 
-	}
+
+    }
 
     void OnDrawGizmos()
     {
-        if(freeze == 0) { 
-            
+        if (close == 0)
+        {
+
             if (path.Length > 0)
             {
                 for (int i = 0; i < path.Length; i++)
                 {
                     if (path[i] != null)
                     {
-                     Gizmos.DrawSphere(path[i].position, reachDist);
+                        Gizmos.DrawSphere(path[i].position, reachDist);
                     }
 
 
-                 }
+                }
             }
-            
+
         }
 
-        
-    }
 
+    }
 }
