@@ -1,0 +1,4 @@
+basic architecture for environment (building markers, gate) - 1.5 hour(s) - by Tuesday @ 12pm
+basic texturing on terrain and on building markers - 2 hours - by Tuesday @ 12pm
+basic terrain leveling for different areas - 1 hour - by Tuesday @ 12pm
+adding some early environment features (like pond+) - 2 hours - by Tuesday @ 12pm 
