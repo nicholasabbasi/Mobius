@@ -14,15 +14,21 @@
           </e>
         </e>
         <e p="Scripts" t="Include">
-          <e p="FirstPersonController.cs" t="Include" />
-          <e p="HeadBob.cs" t="Include" />
-          <e p="MouseLook.cs" t="Include" />
-          <e p="RigidbodyFirstPersonController.cs" t="Include" />
+          <e p="spawnOnClick.cs" t="Include" />
+          <e p="SpawnText.cs" t="Include" />
+          <e p="TextHandler.cs" t="Include" />
+          <e p="TriggerDestroy.cs" t="Include" />
         </e>
         <e p="Standard Assets" t="Include">
           <e p="Characters" t="Include">
             <e p="FirstPersonCharacter" t="Include">
               <e p="FirstPersonCharacterGuidelines.txt" t="Include" />
+              <e p="Scripts" t="Include">
+                <e p="FirstPersonController.cs" t="Include" />
+                <e p="HeadBob.cs" t="Include" />
+                <e p="MouseLook.cs" t="Include" />
+                <e p="RigidbodyFirstPersonController.cs" t="Include" />
+              </e>
             </e>
             <e p="RollerBall" t="Include">
               <e p="RollerBallGuidelines.txt" t="Include" />
@@ -61,6 +67,40 @@
           <e p="Editor" t="Include">
             <e p="CrossPlatformInput" t="Include">
               <e p="CrossPlatformInputInitialize.cs" t="Include" />
+            </e>
+          </e>
+          <e p="Environment" t="Include">
+            <e p="Water" t="Include">
+              <e p="Water" t="Include">
+                <e p="Scripts" t="Include">
+                  <e p="Displace.cs" t="Include" />
+                  <e p="GerstnerDisplace.cs" t="Include" />
+                  <e p="MeshContainer.cs" t="Include" />
+                  <e p="PlanarReflection.cs" t="Include" />
+                  <e p="SpecularLighting.cs" t="Include" />
+                  <e p="Water.cs" t="Include" />
+                  <e p="WaterBase.cs" t="Include" />
+                  <e p="WaterTile.cs" t="Include" />
+                </e>
+                <e p="Shaders" t="Include">
+                  <e p="FXWaterPro.shader" t="Include" />
+                </e>
+              </e>
+              <e p="Water4" t="Include">
+                <e p="Shaders" t="Include">
+                  <e p="FXWater4Advanced.shader" t="Include" />
+                  <e p="FXWater4Simple.shader" t="Include" />
+                  <e p="WaterInclude.cginc" t="Include" />
+                </e>
+              </e>
+            </e>
+            <e p="Water (Basic)" t="Include">
+              <e p="Scripts" t="Include">
+                <e p="WaterBasic.cs" t="Include" />
+              </e>
+              <e p="Shaders" t="Include">
+                <e p="FXWaterBasic.shader" t="Include" />
+              </e>
             </e>
           </e>
           <e p="Utility" t="Include">
