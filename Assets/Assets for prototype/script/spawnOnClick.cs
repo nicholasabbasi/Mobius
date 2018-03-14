@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class spawnOnClick : MonoBehaviour {
     public Transform Spawnpoint2;
@@ -11,20 +9,5 @@ public class spawnOnClick : MonoBehaviour {
     {
         textbox2 = Instantiate(TextPrefab2, Spawnpoint2.position, Spawnpoint2.rotation);
         Destroy(SpawnText.textbox);
-        GateOpen.close = 0;
     }
-
-
-
-
-
-    // Use this for initialization
-    void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
 }
