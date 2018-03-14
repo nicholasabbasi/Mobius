@@ -1,9 +1,9 @@
 ﻿using UnityEngine;
 
 public class TriggerDestroy : MonoBehaviour {
-    void OnTriggerEnter(Collider collision) {
+    private void OnTriggerEnter(Collider collision) {
         if (collision.CompareTag("Player")) {
-            Destroy(SpawnText.textbox);
+            TextHandler.INSTANCE.LeaveChat();
         }
     }
 }
