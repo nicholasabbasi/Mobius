@@ -1,8 +1,14 @@
 ﻿using UnityEngine;
 
-public class TextHandler: MonoBehaviour {
+public class TextHandler: Singleton<TextHandler> {
 
     public static TextHandler INSTANCE;
+    
+    // Only required for singleton.
+    protected override TextHandler Instance {
+        get { return INSTANCE; }
+        set { INSTANCE = value; }
+    }
     
     private GameObject _currentDialogue;
 
@@ -19,20 +25,4 @@ public class TextHandler: MonoBehaviour {
         Destroy(_currentDialogue);
         Cursor.lockState = CursorLockMode.Locked;
     }
-    
-    void Awake() {
-        //Check if instance already exists
-        if (INSTANCE == null) {
-            //if not, set instance to this
-            INSTANCE = this;
-            DontDestroyOnLoad(gameObject);
-        }
- 
-        //If instance already exists and it's not this:
-        else if (INSTANCE != this) {
-            //Then destroy this. This enforces our singleton pattern, meaning there can only ever be one instance of a GameManager.
-            Destroy(gameObject);
-        }
-    }
-    
 }

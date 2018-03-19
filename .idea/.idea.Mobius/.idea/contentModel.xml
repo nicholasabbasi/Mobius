@@ -14,6 +14,10 @@
           </e>
         </e>
         <e p="Scripts" t="Include">
+          <e p="DisplayTime.cs" t="Include" />
+          <e p="Gametime.cs" t="Include" />
+          <e p="NavWander.cs" t="Include" />
+          <e p="Singleton.cs" t="Include" />
           <e p="spawnOnClick.cs" t="Include" />
           <e p="SpawnText.cs" t="Include" />
           <e p="TextHandler.cs" t="Include" />
