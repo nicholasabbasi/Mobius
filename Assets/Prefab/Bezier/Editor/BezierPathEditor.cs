@@ -176,7 +176,7 @@ public class BezierPathEditor : Editor
             EditorUtility.SetDirty(target);
     }
 
-    [DrawGizmo(GizmoType.NotSelected | GizmoType.Pickable)]
+    [DrawGizmo(GizmoType.NotInSelectionHierarchy | GizmoType.Pickable)]
     static void drawPathGizmos(BezierPath path, GizmoType gizmoType)
     {
         // don't draw if selected
