@@ -11,14 +11,13 @@ using UnityEngine.AI;
     // For drawing the debugging.
     public Transform Eyes;
     public float Size = 1;
-    
-    public List<Transform> Waypoints;
 
+    public Waypoint.Type WaypointType;
     [HideInInspector] public NavMeshAgent NavMeshAgent;
     [HideInInspector] public int NextWayPoint;
     [HideInInspector] public Transform ChaseTarget;
     [HideInInspector] public float StateTimeElapsed;
-
+    
     private bool _active;
 
     public bool Active {

@@ -150,10 +150,7 @@ MonoBehaviour:
   RemainState: {fileID: 0}
   Eyes: {fileID: 48630574}
   Size: 2
-  Waypoints:
-  - {fileID: 144196831}
-  - {fileID: 784247599}
-  - {fileID: 1818136292}
+  WaypointType: 0
   NavMeshAgent: {fileID: 0}
   NextWayPoint: 0
   ChaseTarget: {fileID: 0}
@@ -277,6 +274,7 @@ GameObject:
   - component: {fileID: 144196834}
   - component: {fileID: 144196833}
   - component: {fileID: 144196832}
+  - component: {fileID: 144196835}
   m_Layer: 0
   m_Name: Waypoint 1
   m_TagString: Untagged
@@ -350,6 +348,19 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 144196830}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &144196835
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 144196830}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e5e2e92910fa472bb87b868f18a5f0f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Category: 0
+  Order: 1
 --- !u!1 &285303821
 GameObject:
   m_ObjectHideFlags: 0
@@ -705,6 +716,7 @@ GameObject:
   - component: {fileID: 784247602}
   - component: {fileID: 784247601}
   - component: {fileID: 784247600}
+  - component: {fileID: 784247603}
   m_Layer: 0
   m_Name: Waypoint 2
   m_TagString: Untagged
@@ -778,6 +790,19 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 784247598}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &784247603
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 784247598}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e5e2e92910fa472bb87b868f18a5f0f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Category: 0
+  Order: 1
 --- !u!1001 &828705473
 Prefab:
   m_ObjectHideFlags: 0
@@ -1695,6 +1720,7 @@ GameObject:
   - component: {fileID: 1818136295}
   - component: {fileID: 1818136294}
   - component: {fileID: 1818136293}
+  - component: {fileID: 1818136296}
   m_Layer: 0
   m_Name: Waypoint 3
   m_TagString: Untagged
@@ -1768,6 +1794,19 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1818136291}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1818136296
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1818136291}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e5e2e92910fa472bb87b868f18a5f0f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Category: 0
+  Order: 1
 --- !u!1 &1937405477
 GameObject:
   m_ObjectHideFlags: 0
