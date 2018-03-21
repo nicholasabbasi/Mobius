@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Name: StopState
   m_EditorClassIdentifier: 
   Actions:
-  - {fileID: 0}
+  - {fileID: 11400000, guid: 860704b5ea27a4032977bce6abf2ba91, type: 2}
   Transitions:
   - Decision: {fileID: 11400000, guid: 55187977578004cf48ec1c98c62a977c, type: 2}
     TrueState: {fileID: 11400000}

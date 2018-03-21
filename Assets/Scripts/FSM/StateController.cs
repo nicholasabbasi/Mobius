@@ -4,12 +4,11 @@ using UnityEngine;
 using UnityEngine.AI;
 
 [RequireComponent(typeof(NavMeshAgent))]
-    public class StateController : MonoBehaviour {
+public class StateController : MonoBehaviour {
     public State CurrentState;
     public State RemainState;
     
     // For drawing the debugging.
-    public Transform Eyes;
     public float Size = 1;
 
     public Waypoint.Type WaypointType;
@@ -40,9 +39,9 @@ using UnityEngine.AI;
     }
 
     private void OnDrawGizmos() {
-        if (CurrentState != null && Eyes != null) {
+        if (CurrentState != null) {
             Gizmos.color = CurrentState.SceneGizmoColor;
-            Gizmos.DrawWireSphere(Eyes.position, Size);
+            Gizmos.DrawWireSphere(transform.position, Size);
         }
     }
 
