@@ -20,8 +20,14 @@
           </e>
           <e p="FSM" t="Include">
             <e p="Action.cs" t="Include" />
+            <e p="Actions" t="Include">
+              <e p="PatrolAction.cs" t="Include" />
+              <e p="StopAction.cs" t="Include" />
+            </e>
+            <e p="Decision" t="Include">
+              <e p="PlayerDecision.cs" t="Include" />
+            </e>
             <e p="Decision.cs" t="Include" />
-            <e p="PatrolAction.cs" t="Include" />
             <e p="State.cs" t="Include" />
             <e p="StateController.cs" t="Include" />
             <e p="Transition.cs" t="Include" />
