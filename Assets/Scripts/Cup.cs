@@ -4,14 +4,35 @@ using UnityEngine;
 
 public class Cup : MonoBehaviour {
 
-    public GameObject player;
 
-    public void OnCollisionEnter(Collision collision)
+
+    void Update()
     {
-        GameObject var = collision.gameObject;
-        if(var == player)
+        if (Input.GetMouseButtonDown(0))
         {
-            Destroy(this.gameObject);
+
+            RaycastHit hit;
+
+            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+            if (Physics.Raycast(ray, out hit, 100.0f))
+            {
+                if (hit.transform)
+                {
+                    if (hit.transform.gameObject.name == "Chalice")
+                    {
+                      
+                         Destroy(gameObject);          //attach this to Cube and sucessfully destroy the Cube
+
+                    }
+
+                   
+                }
+
+            }
+
+
         }
     }
+
+
 }

@@ -13,19 +13,28 @@ class BezierController : MonoBehaviour
     public float speed = 1;
     public bool byDist = false;
 
+    public static int StartMove;
+
     private float t = 0;
 
     void Start()
     {
+        StartMove = 0;
+
     }
 
     void Update()
     {
-        t += speed*Time.deltaTime;
-        if (!byDist)
-            transform.position = path.GetPositionByT(t);
-        else
-            transform.position = path.GetPositionByDistance(t);
+        if (StartMove == 1)
+        {
+
+            t += speed * Time.deltaTime;
+            if (!byDist)
+                transform.position = path.GetPositionByT(t);
+            else
+                transform.position = path.GetPositionByDistance(t);
+
+        }
     }
 }
 
