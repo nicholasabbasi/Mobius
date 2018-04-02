@@ -19,7 +19,7 @@ public class MouseActivateCart : MonoBehaviour
             {
                 if (hit.transform)
                 {
-                    if (hit.transform.gameObject.name == "Minecart")
+                    if (hit.transform.gameObject.name == "VRLever")
                     {
 
                         BezierController.StartMove = 1;

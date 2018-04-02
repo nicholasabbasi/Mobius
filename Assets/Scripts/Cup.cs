@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Cup : MonoBehaviour {
-
+    public Transform Spawnpoint;
+    public GameObject Prefab;
 
 
     void Update()
@@ -20,8 +21,8 @@ public class Cup : MonoBehaviour {
                 {
                     if (hit.transform.gameObject.name == "Chalice")
                     {
-                      
-                         Destroy(gameObject);          //attach this to Cube and sucessfully destroy the Cube
+                        Instantiate(Prefab, Spawnpoint.position, Spawnpoint.rotation);
+                        Destroy(gameObject);          //attach this to Cube and sucessfully destroy the Cube
 
                     }
 
