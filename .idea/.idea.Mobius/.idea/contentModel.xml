@@ -3,21 +3,52 @@
   <component name="ContentModelStore">
     <e p="$PROJECT_DIR$" t="IncludeRecursive">
       <e p="Assembly-CSharp-Editor-firstpass.csproj" t="IncludeRecursive" />
+      <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp-firstpass.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
+        <e p="Models" t="Include">
+          <e p="Key" t="Include">
+            <e p="readME keys.txt" t="Include" />
+          </e>
+        </e>
         <e p="Plugins" t="Include">
+          <e p="Bezier" t="Include">
+            <e p="Bezier.cs" t="Include" />
+            <e p="BezierPath.cs" t="Include" />
+          </e>
           <e p="Editor" t="Include">
             <e p="JetBrains" t="Include">
               <e p="Unity3DRider.cs" t="Include" />
             </e>
           </e>
         </e>
+        <e p="Prefab" t="Include">
+          <e p="Bezier" t="Include">
+            <e p="Editor" t="Include">
+              <e p="BezierPathEditor.cs" t="Include" />
+            </e>
+            <e p="Example" t="Include">
+              <e p="BezierController.cs" t="Include" />
+            </e>
+            <e p="readme.txt" t="Include" />
+          </e>
+          <e p="Terrain Hole Prefabs" t="Include">
+            <e p="DepthMaskTerrain.shader" t="Include" />
+            <e p="DepthShader.shader" t="Include" />
+            <e p="TerrainHole.cs" t="Include" />
+          </e>
+        </e>
         <e p="Scripts" t="Include">
+          <e p="BladeDestroy.cs" t="Include" />
+          <e p="Chase.cs" t="Include" />
+          <e p="createobj.cs" t="Include" />
+          <e p="Cup.cs" t="Include" />
           <e p="Dialog" t="Include">
             <e p="TextHandler.cs" t="Include" />
             <e p="TriggerDestroy.cs" t="Include" />
           </e>
+          <e p="DoorActivation.cs" t="Include" />
           <e p="FSM" t="Include">
             <e p="Action.cs" t="Include" />
             <e p="Actions" t="Include">
@@ -32,10 +63,16 @@
             <e p="StateController.cs" t="Include" />
             <e p="Transition.cs" t="Include" />
           </e>
+          <e p="GateOpen.cs" t="Include" />
+          <e p="KeyClick.cs" t="Include" />
+          <e p="MouseActivateCart.cs" t="Include" />
+          <e p="MouseClickActivation.cs" t="Include" />
           <e p="NavWander.cs" t="Include" />
           <e p="OrderedWaypoint.cs" t="Include" />
+          <e p="ReloadScene.cs" t="Include" />
           <e p="spawnOnClick.cs" t="Include" />
           <e p="SpawnText.cs" t="Include" />
+          <e p="TakeCross.cs" t="Include" />
           <e p="Time" t="Include">
             <e p="DisplayTime.cs" t="Include" />
             <e p="Gametime.cs" t="Include" />
@@ -44,6 +81,8 @@
             <e p="Singleton.cs" t="Include" />
           </e>
           <e p="Waypoint.cs" t="Include" />
+          <e p="WilliamLocker.cs" t="Include" />
+          <e p="Win.cs" t="Include" />
         </e>
         <e p="Standard Assets" t="Include">
           <e p="Characters" t="Include">
