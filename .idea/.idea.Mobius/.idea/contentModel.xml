@@ -67,6 +67,7 @@
             <e p="TriggerDestroy.cs" t="Include" />
           </e>
           <e p="DoorActivation.cs" t="Include" />
+          <e p="ExplosionTime.cs" t="Include" />
           <e p="FSM" t="Include">
             <e p="Action.cs" t="Include" />
             <e p="Actions" t="Include">
