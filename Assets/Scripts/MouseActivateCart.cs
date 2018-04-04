@@ -36,17 +36,5 @@ public class MouseActivateCart : MonoBehaviour
 
         }
     }
-
-    /*
-    private void PrintName(GameObject go)
-    {
-        if (go.name == "Cube")
-        {
-            print(go.name);
-            //Destroy(gameObject);          //attach this to Cube and sucessfully destroy the Cube
-
-        }
-    }
-    */
     
 }
