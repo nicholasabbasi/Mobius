@@ -64,3 +64,17 @@ The game takes place in a Western Town known as Refuge to its inhabitants. It is
 
 He wakes up next to Rowsell, the guardian of the village. If he fails to convince Roswell that he isn't a threat, he will die.
 
+# Character Design
+The character design is based off of the description from The Adventure Zone. This is further reinforced from the best aspects that fan artists have designed and publish for general use and appreciation. 
+
+#### Roswell:
+A earth elemental golem that was formed when Rick was killed by Isaac in his quest to get the Chalice. The creation also formed around a bird, which became part of Roswell.
+
+#### Isaac:
+Sheriff of the town. Killed Rick to get the chalice. Is stuck in the mines, watching over the Chalice, guarding it from others. 
+
+# Level Design
+Again, based off of the podcast. This design is mostly centered around a western town that has been solely inhabited by the residents alone for decades. The town was a former diamond mine, but the vein ran out and the town is desperate to find more to bring prosperity back. This, along with the isolation has lead diamonds to become the only currency, and to have as much value as a slice of bread per carat of diamond. 
+
+# Physics
+We use mostly rigid body physics for general movement, but also use some particle physics for explosions, wind/air movement and some bug simulations (Repelled by light)
