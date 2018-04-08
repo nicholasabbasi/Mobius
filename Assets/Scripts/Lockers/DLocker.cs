@@ -2,22 +2,29 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-
-public class MouseClickActivation : MonoBehaviour
-{
+public class DLocker : MonoBehaviour {
     Animator animator;
     public static bool doorOpen;
+
+    public static int PW_Entered;
+ 
+
 
     void Start()
     {
         doorOpen = false;
         animator = GetComponent<Animator>();
+        PW_Entered = 1;               //D locker doesn't need password
+       
     }
 
 
 
     void Update()
     {
+
+
+
         if (Input.GetMouseButtonDown(0))
         {
 
@@ -28,33 +35,40 @@ public class MouseClickActivation : MonoBehaviour
             {
                 if (hit.transform)
                 {
-                    if (hit.transform.gameObject.name == "Xdoor")
+                    if (hit.transform.gameObject.name == "DDoor")   // for D locker only
                     {
-                        if (doorOpen)
+                       
+                       
+                        if (doorOpen)          //door is openning
                         {
-                            doorOpen = false;
+                            
                             Doors("Close");
+                            doorOpen = false;
+                            // set next locker false
+                            ILocker.PW_Entered = 0;
                         }
-                        else
+                        else                  //door is closing
                         {
-                            doorOpen = true;
+                            
                             Doors("Open");
+                            doorOpen = true;
+                            //set next locker true
+                            ILocker.PW_Entered = 1;
+
                         }
-                    
 
-
-                        // DoorActivation.doorOpen = true;
-                        // Destroy(gameObject);          //attach this to Cube and sucessfully destroy the Cube
+                        
 
                     }
-                    
-                    //PrintName(hit.transform.gameObject);
+
+                   
                 }
 
             }
 
 
         }
+
     }
 
 
@@ -62,18 +76,4 @@ public class MouseClickActivation : MonoBehaviour
     {
         animator.SetTrigger(direction);
     }
-
-
-    /*
-    private void PrintName(GameObject go)
-    {
-        if (go.name == "Cube")
-        {
-            print(go.name);
-            Destroy(gameObject);          //attach this to Cube and sucessfully destroy the Cube
-
-        }
-    }
-
-    */
 }
