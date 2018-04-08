@@ -22,7 +22,8 @@ public class KeyClick : MonoBehaviour {
 
 
                         GateOpen.close = 0;
-                        
+
+                        DestroyObject(this.gameObject);
 
                     }
 
