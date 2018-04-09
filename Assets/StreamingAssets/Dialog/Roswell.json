@@ -1,0 +1,16 @@
+{
+	"dialog": [{
+			"text": "Hello!",
+			"tag": "initial",
+			"options": [{
+					"text": "Hello!",
+					"link": "initial"
+				},
+				{
+						"text": "Go fuck yourself!",
+						"link": "end"
+				}
+			]
+		}
+	]
+}

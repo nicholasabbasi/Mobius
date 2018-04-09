@@ -16,26 +16,30 @@ public class DialogTree {
 	public Dialog Current {
 		get { return _data[_current]; }
 	}
+	
+	public bool IsFinished = false;
 
 	public DialogTree(string name) {
 		var path = Path.Combine(_dialogFolderPath, name + ".json");
 		
 		// Load from JSON file in StreamingAssets/Dialog/$name.json
 		if (File.Exists(path)) {
-			_data = JsonUtility.FromJson<DialogTreeData>(File.ReadAllText(path)).dialog;
+			var fileData = File.ReadAllText(path);
+			
+			_data = JsonUtility.FromJson<DialogTreeData>(fileData).dialog;
+			
+			// Build up hashmap in beginning to allow for quick jumps.
+			for (var i = 0; i < _data.Length; i++) {
+				var dialog = _data[i];
+				if (dialog.tag == null) {
+					continue;
+				}
+			
+				_tagMap.Add(dialog.tag, i);
+			}
 		}
 		else {
-			Debug.LogError("Could not load dialog data for: " + name);
-		}
-	
-		// Build up hashmap in beginning to allow for quick jumps.
-		for (var i = 0; i < _data.Length; i++) {
-			var dialog = _data[i];
-			if (dialog.tag == null) {
-				continue;
-			}
-			
-			_tagMap.Add(dialog.tag, i);
+			Debug.LogError("Could not load dialog data for: " + name + " at path " + path);
 		}
 
 		_current = 0;
@@ -44,11 +48,16 @@ public class DialogTree {
 	public Dialog ChooseOption(int optionIndex) {
 		var option = Current.options[optionIndex];
 
-		if (option.tag == null) {
-			_current++;
+		if (option.link == "end") {
+			IsFinished = true;
+			return Current;
+		}
+
+		if (option.link == null) {
+			_current = (_current + 1) % _data.Length;
 		}
 		else {
-			_current = _tagMap[option.tag];
+			_current = _tagMap[option.link];
 		}
 
 		return Current;
@@ -57,20 +66,20 @@ public class DialogTree {
 
 [Serializable]
 public class DialogTreeData {
-	public readonly Dialog[] dialog;
+	public Dialog[] dialog;
 }
 
 [Serializable]
 public struct Dialog {
-	public readonly string text;
-	public readonly string tag;
-	public readonly DialogLink[] options;
+	public string text;
+	public string tag;
+	public DialogLink[] options;
 }
 
 [Serializable]
 public struct DialogLink {
-	public readonly string text;
+	public string text;
 	
 	// If it doesn't exist, then progress to next dialog.
-	public readonly string tag;
+	public string link;
 }
