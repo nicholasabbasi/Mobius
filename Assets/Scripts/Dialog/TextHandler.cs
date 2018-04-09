@@ -1,4 +1,6 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
+using UnityEngine.UI;
 
 public class TextHandler: Singleton<TextHandler> {
 
@@ -9,20 +11,30 @@ public class TextHandler: Singleton<TextHandler> {
         get { return INSTANCE; }
         set { INSTANCE = value; }
     }
-    
-    private GameObject _currentDialogue;
 
-    public void SpawnText(GameObject text) {
-        if (_currentDialogue != null) {
-            Destroy(_currentDialogue);
-        }
+    public GameObject Panel;
+    public Text Text;
+
+    private void Start() {
+        Text.transform.SetParent(null);
+    }
+
+    public void SpawnText(string text) {
+        ClearText();
+        Instantiate(Text, Panel.transform).text = text;
         
-        _currentDialogue = Instantiate(text);
         Cursor.lockState = CursorLockMode.None;
     }
 
     public void LeaveChat() {
-        Destroy(_currentDialogue);
+        ClearText();
+        Panel.SetActive(false);
         Cursor.lockState = CursorLockMode.Locked;
+    }
+
+    private void ClearText() {
+        foreach (Transform child in Panel.transform) {
+            Destroy(child.gameObject);
+        }
     }
 }
