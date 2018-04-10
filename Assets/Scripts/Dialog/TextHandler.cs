@@ -31,6 +31,7 @@ public class TextHandler: Singleton<TextHandler> {
         
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
+        
     }
 
     private void SpawnText(string text, int height, Action<int> handler = null, int index = 0) {

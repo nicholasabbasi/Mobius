@@ -14,22 +14,28 @@ public class ClickDialog : MonoBehaviour, IInteractable {
 	private void Start () {
 		_tree = new DialogTree(CharacterName);
 	}
+
+	private FirstPersonController _controller;
 	
 	public void Interact(MouseInteract other) {
 		if (!other.CompareTag("Player")) return;
-		var controller = other.GetComponent<FirstPersonController>();
+		_controller = other.GetComponent<FirstPersonController>();
 		
-		controller.enabled = false;
+		_controller.enabled = false;
+		
+		OnText(0);
+	}
 
+	public void OnText(int index) {
+		_tree.ChooseOption(index);
+		
 		var answers = _tree.Current.options.Select(it => it.text).ToArray();
-			
-		TextHandler.INSTANCE.SpawnText(_tree.Current.text, answers, delegate(int index) {
-			_tree.ChooseOption(index);
+		
+		TextHandler.INSTANCE.SpawnText(_tree.Current.text, answers, OnText);
 
-			if (_tree.IsFinished) {
-				controller.enabled = true;
-				TextHandler.INSTANCE.LeaveChat();
-			}
-		});
+		if (_tree.IsFinished) {
+			_controller.enabled = true;
+			TextHandler.INSTANCE.LeaveChat();
+		}
 	}
 }

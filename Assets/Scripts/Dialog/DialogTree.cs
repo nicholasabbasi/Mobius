@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.IO;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class DialogTree {
 	private readonly string _dialogFolderPath = Path.Combine(Application.streamingAssetsPath, "Dialog");
@@ -53,12 +54,20 @@ public class DialogTree {
 			return Current;
 		}
 
+		if (option.link == "death") {
+			IsFinished = true;
+			SceneManager.LoadScene(0);
+			return Current;
+		}
+
 		if (option.link == null) {
 			_current = (_current + 1) % _data.Length;
 		}
 		else {
 			_current = _tagMap[option.link];
 		}
+		
+		Debug.Log("Loading " + Current.options[0].text);
 
 		return Current;
 	}
