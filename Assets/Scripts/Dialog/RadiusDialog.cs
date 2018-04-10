@@ -2,7 +2,7 @@
 using UnityEngine;
 using UnityStandardAssets.Characters.FirstPerson;
 
-public class CharacterDialog: MonoBehaviour {
+public class RadiusDialog: MonoBehaviour {
 
 	public string CharacterName;
 

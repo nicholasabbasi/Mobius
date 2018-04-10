@@ -66,8 +66,9 @@
           <e p="createobj.cs" t="Include" />
           <e p="Cup.cs" t="Include" />
           <e p="Dialog" t="Include">
-            <e p="CharacterDialog.cs" t="Include" />
+            <e p="ClickDialog.cs" t="Include" />
             <e p="DialogTree.cs" t="Include" />
+            <e p="RadiusDialog.cs" t="Include" />
             <e p="TextHandler.cs" t="Include" />
             <e p="TriggerDestroy.cs" t="Include" />
           </e>
@@ -105,7 +106,7 @@
             <e p="SLocker.cs" t="Include" />
             <e p="WilliamLocker.cs" t="Include" />
           </e>
-          <e p="MouseActivateCart.cs" t="Include" />
+          <e p="MouseInteract.cs" t="Include" />
           <e p="NavWander.cs" t="Include" />
           <e p="OrderedWaypoint.cs" t="Include" />
           <e p="ReloadScene.cs" t="Include" />
