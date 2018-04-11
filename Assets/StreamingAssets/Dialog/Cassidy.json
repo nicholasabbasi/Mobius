@@ -1,0 +1,95 @@
+{
+	"dialog": [
+		{
+			"text": "Gerblins! Get away from me you dirty Gerblins.",
+			"options": [
+				{
+					"text": "I am not a 'Gerblin', I am Magnus."
+				},
+				{
+					"text": "Why do you think I am a Gerblin?",
+				},
+				{
+					"text": "Who are you?",
+				}
+			]
+		},
+		{
+			"text": "That's exactly what a Gerblin would say! You're here to kill all of us and take my root beer barrels!",
+			"options": [
+				{
+					"text": "What's your story?",
+					"link": "story"
+				},
+				{
+					"text": "So what are you going to do?",
+					"link": "plan"
+				},
+				{
+					"text": "How can we get out of here?",
+					"link": "plan"
+				}
+			]
+		},
+		{
+			"tag": "story",
+			"text": "I've been falsely accused! I'm locked up here. They said I blew up the temple. I didn't blow up any damn temples, I blow up the earth!",
+			"options": [
+				{
+					"text": "The temple?",
+					"link": "temple"
+				},
+				{
+					"text": "Blow up the earth?",
+					"link": "diamonds"
+				},
+				{
+					"text": "You blew up the temple?",
+					"link": "diamonds"
+				},
+				{
+					"text": "Could the earth have had the temple ontop of it?",
+					"link": "temple"
+				}
+			]
+		},
+		{
+			"tag": "diamonds",
+			"text": "I don't blow up any temples. I get out those diamonds fom under them. Best there ever was, that's sure as shit true. That's my story and I'm sticking to it.",
+			"options": [
+				{
+					"text": "The temple?",
+					"link": "temple"
+				},
+				{
+					"text": "You got a plan to get out of here?",
+					"link": "plan"
+				}
+			]
+		},
+		{
+			"tag": "temple",
+			"text": "Yeah, Istus's temple. They said I blew it up. Never been there, don't much care for it all. I just get the diamonds.",
+			"options": [
+				{
+					"text": "Diamonds?",
+					"link": "diamonds"
+				},
+				{
+					"text": "You got a plan to get out of here?",
+					"link": "plan"
+				}
+			]
+		},
+		{
+			"tag": "plan",
+			"text": "I'm going to get out of here. I smelled diamonds, I know it.",
+			"options": [
+				{
+					"text": "(Walk away)",
+					"link": "end"
+				}
+			]
+		}
+	]
+}
