@@ -63,7 +63,7 @@ public class RLocker : MonoBehaviour {
                         else
                         {
                             // should kill player when it try to open this door
-                            SceneManager.LoadScene(0);//(SceneManager.GetActiveScene ().name);
+                            Scenes.LoadMainScene();//(SceneManager.GetActiveScene ().name);
 
                         }
                     }

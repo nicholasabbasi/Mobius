@@ -24,7 +24,7 @@ public class ClickKill : MonoBehaviour {
                     if (wrongDoorNames.Contains(door_name))
                     {
 
-                        SceneManager.LoadScene(0);
+                        Scenes.LoadMainScene();
                         // DoorActivation.doorOpen = true;
                         // Destroy(gameObject);          //attach this to Cube and sucessfully destroy the Cube
 

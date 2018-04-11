@@ -62,6 +62,7 @@
         </e>
         <e p="Scripts" t="Include">
           <e p="BladeDestroy.cs" t="Include" />
+          <e p="CameraFacingBillboard.cs" t="Include" />
           <e p="Chase.cs" t="Include" />
           <e p="createobj.cs" t="Include" />
           <e p="Cup.cs" t="Include" />
@@ -93,6 +94,7 @@
             <e p="Transition.cs" t="Include" />
           </e>
           <e p="GateOpen.cs" t="Include" />
+          <e p="IntroCrawl.cs" t="Include" />
           <e p="KeyClick.cs" t="Include" />
           <e p="Lockers" t="Include">
             <e p="ALocker.cs" t="Include" />
@@ -119,6 +121,7 @@
             <e p="Gametime.cs" t="Include" />
           </e>
           <e p="Utility" t="Include">
+            <e p="Scenes.cs" t="Include" />
             <e p="Singleton.cs" t="Include" />
           </e>
           <e p="Waypoint.cs" t="Include" />

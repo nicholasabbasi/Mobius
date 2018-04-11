@@ -56,7 +56,7 @@ public class DialogTree {
 
 		if (option.link == "death") {
 			IsFinished = true;
-			SceneManager.LoadScene(0);
+			Scenes.LoadMainScene();
 			return Current;
 		}
 

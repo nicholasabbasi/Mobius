@@ -21,7 +21,7 @@ public class WilliamLocker : MonoBehaviour {
                     if (hit.transform.gameObject.name == "Williamdoor")
                     {
 
-                        SceneManager.LoadScene(0);
+                        Scenes.LoadMainScene();
                         // DoorActivation.doorOpen = true;
                         // Destroy(gameObject);          //attach this to Cube and sucessfully destroy the Cube
 
