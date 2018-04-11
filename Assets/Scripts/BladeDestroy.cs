@@ -20,7 +20,7 @@ public class BladeDestroy : MonoBehaviour
 
         if (other.gameObject.tag == "Player")
         {
-            SceneManager.LoadScene(0);//(SceneManager.GetActiveScene ().name);
+            Scenes.LoadMainScene();//(SceneManager.GetActiveScene ().name);
         }
 
     }

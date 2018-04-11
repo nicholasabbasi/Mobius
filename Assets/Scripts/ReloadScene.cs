@@ -7,6 +7,6 @@ public class ReloadScene : MonoBehaviour {
 
     void OnTriggerEnter()
     {
-        SceneManager.LoadScene(0);//(SceneManager.GetActiveScene ().name);
+        Scenes.LoadMainScene();//(SceneManager.GetActiveScene ().name);
     }
 }
