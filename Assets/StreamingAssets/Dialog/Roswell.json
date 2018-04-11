@@ -1,0 +1,89 @@
+{
+	"dialog": [
+		{
+			"text": "Hello visitor! Please identify yourself.",
+			"options": [
+				{
+					"text": "Hail and well met, friend!"
+				},
+				{
+					"text": "I am Magnus Highchurch!",
+					"link": "ident"
+				},
+				{
+					"text": "Why would I tell you that?",
+					"link": "death"
+				},
+				{
+					"text": "Who are YOU?",
+					"link": "name-no-ident"
+				}
+			]
+		},
+		{
+			"text": "Hello. Please identify yourself.",
+			"options": [
+				{
+					"text": "I am Magnus Highchurch!",
+					"link": "ident"
+				},
+				{
+					"text": "Why would I tell you that?",
+					"link": "death"
+				},
+				{
+					"text": "Who are YOU?",
+					"link": "name-no-ident"
+				}
+			]
+		},
+		{
+			"tag": "name-no-ident",
+			"text": "Uh, I'm called Roswell. Please identify yourselves.",
+			"options": [
+				{
+					"text": "I am Magnus Highchurch!",
+					"link": "ident"
+				},
+				{
+					"text": "Why would I tell you that?",
+					"link": "death"
+				}
+			]
+		},
+		{
+			"tag": "ident",
+			"text": "How did you get here? People don't come here very often.",
+			"options": [
+				{
+					"text": "I don't know."
+				}
+			]
+		},
+		{
+			"text": "That doesn't bode well. How about you come with me?",
+			"options": [
+				{
+					"text": "I'd rather not. Let's see what you are made of.",
+					"link": "death"
+				},
+				{
+					"text": "Where are we going?"
+				}
+			]
+		},
+		{
+			"text": "We are going to put you in the jail for now. Just in the office room until Sheriff Issac gets back.",
+			"options": [
+				{
+					"text": "Sounds good.",
+					"link": "end"
+				},
+				{
+					"text": "I'd rather not. Let's see what you are made of.",
+					"link": "death"
+				}
+			]
+		}
+	]
+}

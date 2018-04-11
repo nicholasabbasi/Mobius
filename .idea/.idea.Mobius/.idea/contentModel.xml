@@ -51,6 +51,9 @@
             </e>
             <e p="readme.txt" t="Include" />
           </e>
+          <e p="nnj3de_crucarp" t="Include">
+            <e p="readme.txt" t="Include" />
+          </e>
           <e p="Terrain Hole Prefabs" t="Include">
             <e p="DepthMaskTerrain.shader" t="Include" />
             <e p="DepthShader.shader" t="Include" />
@@ -63,11 +66,18 @@
           <e p="createobj.cs" t="Include" />
           <e p="Cup.cs" t="Include" />
           <e p="Dialog" t="Include">
+            <e p="ClickDialog.cs" t="Include" />
+            <e p="DialogTree.cs" t="Include" />
+            <e p="RadiusDialog.cs" t="Include" />
             <e p="TextHandler.cs" t="Include" />
             <e p="TriggerDestroy.cs" t="Include" />
           </e>
-          <e p="DoorActivation.cs" t="Include" />
           <e p="ExplosionTime.cs" t="Include" />
+          <e p="FaceCam.cs" t="Include" />
+          <e p="Fish Flock" t="Include">
+            <e p="flock.cs" t="Include" />
+            <e p="globalFlock.cs" t="Include" />
+          </e>
           <e p="FSM" t="Include">
             <e p="Action.cs" t="Include" />
             <e p="Actions" t="Include">
@@ -84,8 +94,19 @@
           </e>
           <e p="GateOpen.cs" t="Include" />
           <e p="KeyClick.cs" t="Include" />
-          <e p="MouseActivateCart.cs" t="Include" />
-          <e p="MouseClickActivation.cs" t="Include" />
+          <e p="Lockers" t="Include">
+            <e p="ALocker.cs" t="Include" />
+            <e p="ClickKill.cs" t="Include" />
+            <e p="DLocker.cs" t="Include" />
+            <e p="DoorActivation.cs" t="Include" />
+            <e p="ILocker.cs" t="Include" />
+            <e p="MLocker.cs" t="Include" />
+            <e p="MouseClickActivation.cs" t="Include" />
+            <e p="RLocker.cs" t="Include" />
+            <e p="SLocker.cs" t="Include" />
+            <e p="WilliamLocker.cs" t="Include" />
+          </e>
+          <e p="MouseInteract.cs" t="Include" />
           <e p="NavWander.cs" t="Include" />
           <e p="OrderedWaypoint.cs" t="Include" />
           <e p="ReloadScene.cs" t="Include" />
@@ -101,7 +122,6 @@
             <e p="Singleton.cs" t="Include" />
           </e>
           <e p="Waypoint.cs" t="Include" />
-          <e p="WilliamLocker.cs" t="Include" />
           <e p="Win.cs" t="Include" />
         </e>
         <e p="Standard Assets" t="Include">

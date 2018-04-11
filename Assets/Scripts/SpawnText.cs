@@ -9,6 +9,6 @@ public class SpawnText : MonoBehaviour {
             return;
         }
 
-        TextHandler.INSTANCE.SpawnText(TextPrefab);
+        //TextHandler.INSTANCE.SpawnText(TextPrefab);
     }
 }
