@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class GotBomb : MonoBehaviour {
 
+   
+
+
 	// Use this for initialization
 	void Start () {
 		
@@ -26,7 +29,6 @@ public class GotBomb : MonoBehaviour {
                     {
                         Blocker.hasBomb = true;
 
-                        
         
                         DestroyObject(this.gameObject);
 
