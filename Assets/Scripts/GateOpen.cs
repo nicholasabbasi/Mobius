@@ -31,17 +31,20 @@ public class GateOpen : MonoBehaviour {
         if (close == 0)
         {
 
-            float dist = Vector3.Distance(path[currentPoint].position, transform.position);
 
-            transform.position = Vector3.MoveTowards(transform.position, path[currentPoint].position, Time.deltaTime * speed);
-
-            //transform.position += dir * Time.deltaTime * speed;
-            if (dist < reachDist)
+            if (currentPoint < 2) // to protect it will not make array out of range
             {
-                currentPoint++;
-            }
+                float dist = Vector3.Distance(path[currentPoint].position, transform.position);
 
-            
+                transform.position = Vector3.MoveTowards(transform.position, path[currentPoint].position, Time.deltaTime * speed);
+
+                //transform.position += dir * Time.deltaTime * speed;
+                if (dist < reachDist)
+                {
+                    currentPoint++;
+                }
+
+            }
         }
 
 
