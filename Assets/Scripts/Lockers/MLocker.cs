@@ -41,7 +41,7 @@ public class MLocker : MonoBehaviour {
 
                             if (doorOpen)          //door is openning
                             {
-
+                                GetComponent<AudioSource>().Play();
                                 Doors("Close");
                                 doorOpen = false;
                                 // set next locker false
@@ -50,6 +50,7 @@ public class MLocker : MonoBehaviour {
                             }
                             else                  //door is closing
                             {
+                                GetComponent<AudioSource>().Play();
                                 Doors("Open");
                                 doorOpen = true;
                                 //set next locker true

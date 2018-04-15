@@ -5,10 +5,27 @@ using UnityEngine.SceneManagement;
 
 public class ClickKill : MonoBehaviour {
 
+    public GameObject explodeEffect;
+
+    float delay = 1f;
+    bool loadScene = false;
     string door_name = "";
     string wrongDoorNames = "BDoor CDoor EDoor FDoor GDoor HDoor JDoor KDoor LDoor NDoor ODoor PDoor QDoor TDoor UDoor VDoor WDoor XDoor YDoor ZDoor ";
     void Update()
     {
+        
+        
+        if (loadScene==true)
+        {
+            delay -= Time.deltaTime;
+            if (delay <= 0)
+            {
+                Scenes.LoadMainScene();
+            }
+        }
+
+
+
         if (Input.GetMouseButtonDown(0))
         {
 
@@ -24,7 +41,9 @@ public class ClickKill : MonoBehaviour {
                     if (wrongDoorNames.Contains(door_name))
                     {
 
-                        Scenes.LoadMainScene();
+                        Explode();
+                        loadScene = true;
+                       
                         // DoorActivation.doorOpen = true;
                         // Destroy(gameObject);          //attach this to Cube and sucessfully destroy the Cube
 
@@ -38,4 +57,15 @@ public class ClickKill : MonoBehaviour {
 
         }
     }
+
+    void Explode()
+    {
+        Instantiate(explodeEffect, transform.position, transform.rotation);
+        GetComponent<AudioSource>().Play();
+
+
+    }
+
+
+
 }
