@@ -5,11 +5,22 @@ using UnityEngine;
 public class Blocker : MonoBehaviour {
 
     public static bool Bombed;
+    public static bool hasBomb;
+    float display_Time;
+    bool textUp;
+    GameObject hintText;
+
     public Transform Spawnpoint;
-    public GameObject Prefab;
+    public GameObject PrefabBomb;
+    public GameObject PrefabText;
+
+
     // Use this for initialization
     void Start () {
         Bombed = false;
+        hasBomb = false;
+        display_Time = 0f;
+        textUp = false;
 	}
 	
 	// Update is called once per frame
@@ -17,9 +28,17 @@ public class Blocker : MonoBehaviour {
 		if(Bombed == true)
         {
             Destroy(gameObject);
+
         }
 
+        display_Time -= Time.deltaTime;
 
+        if(textUp == true && display_Time <= 0)
+        {
+            Destroy(hintText);
+            textUp = false;
+        }
+        
 
         if (Input.GetMouseButtonDown(0))
         {
@@ -33,7 +52,20 @@ public class Blocker : MonoBehaviour {
                 {
                     if (hit.transform.gameObject.name == "Blocker")
                     {
-                        Instantiate(Prefab, Spawnpoint.position, Spawnpoint.rotation);
+                        if (hasBomb == true) // has a bomb on hand, spawn and bomb it
+                        {
+                            Instantiate(PrefabBomb, Spawnpoint.position, Spawnpoint.rotation);
+                        }
+                        else
+                        {
+                            display_Time = 2f;
+
+                            hintText = Instantiate(PrefabText, Spawnpoint.position, Spawnpoint.rotation);
+
+                            textUp = true;
+
+
+                        }
 
                        // Destroy(gameObject);          //attach this to Cube and sucessfully destroy the Cube
 
