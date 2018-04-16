@@ -78,3 +78,26 @@ Again, based off of the podcast. This design is mostly centered around a western
 
 # Physics
 We use mostly rigid body physics for general movement, but also use some particle physics for explosions, wind/air movement and some bug simulations (Repelled by light). Hinge joint for trap animations, colliders for triggers and orther objects, fix joint to link objects together. 
+
+#Sound:
+Game review for sound: Legend of Zelda
+-Background music in the sewage, castle, when player swing the sword, when the boomerang hits wall/tree. When it is raining, there is raining sound. When player throw a bush or bush.   
+
+-The sword swing helps the visuals to let player feel the motion and power. The background sound in sewage give some horror feeling that the visual can’t present in game, the impact is strong enough to help the visual but not too strong. Same as in the castle, the music made the player feel that he/she needs to be hurry, which visual didn’t present that in game. It is another good patch for visual. The sound effect for breaking a jar is little too weak. The tone is too low and the visual give much bigger impact on the breaking.  
+
+-The background music in the sewage is because it wants the player to have a sense of dangerous and prepare for the battle that can appear anytime. This can’t be done good in visual because the enemy doesn’t appear. The music in castle remind players needs to be hurry because he is going to safe the princess. In visual, it can’t be present easily too. The sword swing, jar breaking and raining are obvious. Those sound are common sense in players’ mind. Therefore, they put those sound effect there.   
+
+-Yes, all those sounds repetitive. Some of them should be that way and won’t be annoying such as sword swing. However, the horror sound in sewage repeat the same soundtrack every second. It became annoying after a while. The game designer can use a few more soundtracks or longer sound track for that. The boomerang hits the wall gives the same sound effect as hit on the tree. That doesn’t make sense. The designer should use two soundtracks, one for hard object and one for soft. 
+
+-For the background music, I think it is a cut form some music used in movies. The sword swing is record with swinging a plastic rope. The raining sound is rubbing a plastic bag. Jar breaking is record from a small brick drop on another brick. Boomerang hitting is use a nail drop on concrete ground. 
+
+-The sounds are mostly balanced. The background music is little loud, but I can still hear all the other sound effect clearly, so it is not really need to adjust them. 
+
+Sound used in our game:
+-The background is using the village music. I rejected the actual town music because I want is be softer. The sound effect for the explosion are one of those not really close the real bomb explosion in real life. I rejected that because I think that is not the mind set sound for game explosion. Therefore, I choose one of the lower tone explosion. The rock falling sound effect is a small rock fall to ground. 
+
+
+
+
+
+
