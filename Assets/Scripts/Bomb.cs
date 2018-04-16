@@ -45,8 +45,6 @@ public class Bomb : MonoBehaviour {
         GetComponent<AudioSource>().Play();
        
 
-
-
     }
 
 
