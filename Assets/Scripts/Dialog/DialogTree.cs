@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -13,9 +14,16 @@ public class DialogTree {
 	// Handles fast lookup of tag -> index
 	private readonly Dictionary<string, int> _tagMap = new Dictionary<string, int>();
 	
+	// Handles lookup of flag -> set or not.
+	private readonly HashSet<string> _flags = new HashSet<string>();
+	
 	// The Current Dialog onscreen.
 	public Dialog Current {
 		get { return _data[_current]; }
+	}
+
+	public DialogLink[] Options {
+		get { return Current.options.Where(it => it.showFlag == null || _flags.Contains(it.showFlag)).ToArray(); }
 	}
 	
 	public bool IsFinished = false;
@@ -47,7 +55,7 @@ public class DialogTree {
 	}
 
 	public Dialog ChooseOption(int optionIndex) {
-		var option = Current.options[optionIndex];
+		var option = Options[optionIndex];
 
 		if (option.link == "end") {
 			IsFinished = true;
@@ -67,12 +75,23 @@ public class DialogTree {
 			_current = _tagMap[option.link];
 		}
 		
+		// We have loaded the new option.
+		// Now set the flags up.
+		if (Current.setFlag != null) {
+			_flags.Add(Current.setFlag);
+		}
+		
 		Debug.Log("Loading " + Current.options[0].text);
 
 		return Current;
 	}
 }
 
+// Disable the warnings about the JSON objects not being named properly
+// since the naming scheme for JSON objects and C# code is different.
+
+// ReSharper disable UnassignedField.Global
+// ReSharper disable InconsistentNaming
 [Serializable]
 public class DialogTreeData {
 	public Dialog[] dialog;
@@ -82,6 +101,10 @@ public class DialogTreeData {
 public struct Dialog {
 	public string text;
 	public string tag;
+	
+	// Set this flag when this dialog is shown.
+	public string setFlag;
+	
 	public DialogLink[] options;
 }
 
@@ -89,6 +112,8 @@ public struct Dialog {
 public struct DialogLink {
 	public string text;
 	
+	// Only show this option if the flag has been set.
+	public string showFlag;
 	// If it doesn't exist, then progress to next dialog.
 	public string link;
 }

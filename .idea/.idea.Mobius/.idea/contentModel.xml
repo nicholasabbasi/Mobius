@@ -8,6 +8,7 @@
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
         <e p="Materials" t="Include">
+          <e p="Box.shader" t="Include" />
           <e p="EffectExamples" t="Include">
             <e p="Shared" t="Include">
               <e p="Scripts" t="Include">
@@ -24,6 +25,7 @@
               </e>
             </e>
           </e>
+          <e p="teleport.shader" t="Include" />
         </e>
         <e p="Models" t="Include">
           <e p="Key" t="Include">
@@ -61,12 +63,16 @@
           </e>
         </e>
         <e p="Scripts" t="Include">
+          <e p="Axe.cs" t="Include" />
           <e p="BladeDestroy.cs" t="Include" />
+          <e p="Blocker.cs" t="Include" />
+          <e p="Bomb.cs" t="Include" />
           <e p="CameraFacingBillboard.cs" t="Include" />
           <e p="Chase.cs" t="Include" />
           <e p="createobj.cs" t="Include" />
           <e p="Cup.cs" t="Include" />
           <e p="Dialog" t="Include">
+            <e p="CHDialog.cs" t="Include" />
             <e p="ClickDialog.cs" t="Include" />
             <e p="DialogTree.cs" t="Include" />
             <e p="RadiusDialog.cs" t="Include" />
@@ -94,6 +100,7 @@
             <e p="Transition.cs" t="Include" />
           </e>
           <e p="GateOpen.cs" t="Include" />
+          <e p="GotBomb.cs" t="Include" />
           <e p="IntroCrawl.cs" t="Include" />
           <e p="KeyClick.cs" t="Include" />
           <e p="Lockers" t="Include">
@@ -116,10 +123,12 @@
           <e p="spawnOnClick.cs" t="Include" />
           <e p="SpawnText.cs" t="Include" />
           <e p="TakeCross.cs" t="Include" />
+          <e p="TextSpawnCollider.cs" t="Include" />
           <e p="Time" t="Include">
             <e p="DisplayTime.cs" t="Include" />
             <e p="Gametime.cs" t="Include" />
           </e>
+          <e p="Tree.cs" t="Include" />
           <e p="Utility" t="Include">
             <e p="Scenes.cs" t="Include" />
             <e p="Singleton.cs" t="Include" />
