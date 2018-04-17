@@ -1,10 +1,10 @@
 {
 	"dialog": [
 		{
-			"text": "Gerblins! Get away from me you dirty Gerblins.",
+			"text": "Hi, what can I do for you... Oh my god, you're Magnus! I recgonize you!",
 			"options": [
 				{
-					"text": "I am not a 'Gerblin', I am Magnus."
+					"text": "Why hello there. Your name is Phil, right?"
 				},
 				{
 					"text": "Why do you think I am a Gerblin?"
