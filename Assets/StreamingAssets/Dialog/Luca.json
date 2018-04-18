@@ -1,0 +1,41 @@
+{
+	"dialog": [
+		{
+			"text": "Woah. What are you doing in here‽",
+			"options": [
+				{
+					"text": "Just looking. What are YOU doing in here?",
+					"link": "angry"
+				},
+				{
+					"text": "I am looking for where the quarry would be.",
+					"link": "directions"
+				}
+			]
+		},
+		{
+			"tag": "directions",
+			"text": "The quarry is to the North-West of town. Please get out of here.",
+			"options": [
+				{
+					"text": "Ok, I'll head out now. Thanks.",
+					"link": "end"
+				}
+			]
+		},
+		{
+			"tag": "angry",
+			"text": "I live here. You don't. I don't trust outsiders. Get out.",
+			"options": [
+				{
+					"text": "What are you going to do about it.",
+					"link": "death"
+				},
+				{
+					"text": "Ok, I'll leave now.",
+					"link": "end"
+				}
+			]
+		}
+	]
+}
