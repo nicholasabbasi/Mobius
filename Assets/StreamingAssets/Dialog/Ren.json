@@ -4,86 +4,138 @@
 			"text": "Hi, what can I do for you... Oh my god, you're Magnus! I recgonize you!",
 			"options": [
 				{
-					"text": "Why hello there. Your name is Phil, right?"
+					"text": "Why, hello there! Do I know you?",
+					"link": "whoami"
 				},
 				{
-					"text": "Why do you think I am a Gerblin?"
+					"text": "Always nice to meet a fan!",
+					"link": "whoami"
 				},
 				{
-					"text": "Who are you?"
+					"text": "Let's keep this between us. Call me Phil.",
+					"link": "confusion"
 				}
 			]
 		},
 		{
-			"text": "That's exactly what a Gerblin would say! You're here to kill all of us and take my root beer barrels!",
+			"tag": "whoami",
+			"text": "I saw your show in the Underdark! What was it, 2 years ago?",
 			"options": [
 				{
-					"text": "What's your story?",
-					"link": "story"
-				},
-				{
-					"text": "So what are you going to do?",
-					"link": "plan"
-				},
-				{
-					"text": "How can we get out of here?",
-					"link": "plan"
+					"text": "No, the last time I was there was at least 5 years ago.",
+					"link": "timing"
 				}
 			]
 		},
 		{
-			"tag": "story",
-			"text": "I've been falsely accused! I'm locked up here. They said I blew up the temple. I didn't blow up any damn temples, I blow up the earth!",
+			"tag": "confusion",
+			"text": "Why do we need to keep it a secret?",
 			"options": [
 				{
-					"text": "The temple?",
-					"link": "temple"
+					"text": "I am undercover, trying to save this town from the Temporal Chalice.",
+					"link": "chalice"
 				},
 				{
-					"text": "Blow up the earth?",
-					"link": "diamonds"
+					"text": "No particular reason. Who are you?",
+					"link": "whoami"
 				},
 				{
-					"text": "You blew up the temple?",
-					"link": "diamonds"
-				},
-				{
-					"text": "Could the earth have had the temple ontop of it?",
-					"link": "temple"
+					"text": "If I told you that, I would have to kill you.",
+					"link": "laugh"
 				}
 			]
 		},
 		{
-			"tag": "diamonds",
-			"text": "I don't blow up any temples. I get out those diamonds fom under them. Best there ever was, that's sure as shit true. That's my story and I'm sticking to it.",
+			"tag": "timing",
+			"text": "No, I'm sure it was only two years ago. What are you doing here?",
 			"options": [
 				{
-					"text": "The temple?",
-					"link": "temple"
+					"text": "I am undercover, trying to save this town from the Temporal Chalice.",
+					"link": "chalice"
 				},
 				{
-					"text": "You got a plan to get out of here?",
-					"link": "plan"
+					"text": "No particular reason.",
+					"link": "drink"
+				},
+				{
+					"text": "If I told you that, I would have to kill you.",
+					"link": "laugh"
 				}
 			]
 		},
 		{
-			"tag": "temple",
-			"text": "Yeah, Istus's temple. They said I blew it up. Never been there, don't much care for it all. I just get the diamonds.",
+			"tag": "chalice",
+			"text": "Temporal Chalice? I've never heard of it.",
 			"options": [
 				{
-					"text": "Diamonds?",
-					"link": "diamonds"
+					"text": "Where did the thing around town come from?",
+					"link": "bubble"
 				},
 				{
-					"text": "You got a plan to get out of here?",
-					"link": "plan"
+					"text": "I'm going to talk to some other people, try to find out some more.",
+					"link": "drink"
 				}
 			]
 		},
 		{
-			"tag": "plan",
-			"text": "I'm going to get out of here. I smelled diamonds, I know it.",
+			"tag": "laugh",
+			"text": "Sounds a little weird, but I'll go along with it.",
+			"options": [
+				{
+					"text": "Where did the thing around town come from?",
+					"link": "bubble"
+				},
+				{
+					"text": "Have you heard of the Temporal Chalice?",
+					"link": "chalice"
+				}
+			]
+		},
+		{
+			"tag": "bubble",
+			"text": "Oh, the Bubble? It keeps us safe from the outside.",
+			"options": [
+				{
+					"text": "Safe from what?",
+					"link": "safety"
+				},
+				{
+					"text": "What made it?",
+					"link": "bubble-origin"
+				}
+			]
+		},
+		{
+			"tag": "safety",
+			"text": "From the dangers of outside. The bad people out there.",
+			"options": [
+				{
+					"text": "Who made it?",
+					"link": "bubble-origin"
+				},
+				{
+					"text": "I'm going to talk to some other people, try to find out some more.",
+					"link": "drink"
+				}
+			]
+		},
+		{
+			"tag": "bubble-origin",
+			"text": "The visitors made it, and saved our town from the outside.",
+			"options": [
+				{
+					"text": "Safe from what?",
+					"link": "safety"
+				},
+				{
+					"text": "I'm going to talk to some other people, try to find out some more.",
+					"link": "drink"
+				}
+			]
+		},
+		{
+			"tag": "drink",
+			"text": "Well let me know if you need anything.",
 			"options": [
 				{
 					"text": "(Walk away)",
