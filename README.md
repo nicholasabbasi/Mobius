@@ -79,7 +79,7 @@ Again, based off of the podcast. This design is mostly centered around a western
 # Physics
 We use mostly rigid body physics for general movement, but also use some particle physics for explosions, wind/air movement and some bug simulations (Repelled by light). Hinge joint for trap animations, colliders for triggers and orther objects, fix joint to link objects together. 
 
-#Sound:
+# Sound
 Game review for sound: Legend of Zelda
 -Background music in the sewage, castle, when player swing the sword, when the boomerang hits wall/tree. When it is raining, there is raining sound. When player throw a bush or bush.   
 
@@ -97,7 +97,17 @@ Sound used in our game:
 -The background is using the village music. I rejected the actual town music because I want is be softer. The sound effect for the explosion are one of those not really close the real bomb explosion in real life. I rejected that because I think that is not the mind set sound for game explosion. Therefore, I choose one of the lower tone explosion. The rock falling sound effect is a small rock fall to ground. 
 
 
-
+# Game Events
+Upper level: Player has to get information from NPCs. 
+	There are 3 must be done events: 
+		1) Get the password for under ground puzzle. 
+		2) Get a bomb to bomb open the tunnel blocker for excess to the mine. 
+		3) Got an axe and chop a tree to stop skeleton attack under ground.
+Under Ground: Player has to sovle puzzle to reach the room with the Chalice to spawn a teleportor. 
+	Puzzels:
+		1) Use the switch to operate the mine cart to destroy the blade trap. 
+		2) Use the password from NPCs unpper ground to open correct locker doors to find the key to unlock a gate
+		3) Go in the final room to click on the Chalice to spawn the teleportor without being attacked by skeleton
 
 
 
