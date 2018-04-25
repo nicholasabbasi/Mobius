@@ -22,7 +22,7 @@ public class Cup : MonoBehaviour {
                     if (hit.transform.gameObject.name == "Chalice")
                     {
                         Instantiate(Prefab, location.position, location.rotation);
-                        //Destroy(gameObject);         
+                        Destroy(gameObject);         
 
                     }
 

@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class GotBomb : MonoBehaviour {
 
+    public GameObject textPrefab;
+    public Transform textSpwLoc;
+
    
 
 
@@ -29,7 +32,8 @@ public class GotBomb : MonoBehaviour {
                     {
                         Blocker.hasBomb = true;
 
-        
+                        Instantiate(textPrefab, textSpwLoc.position, textSpwLoc.rotation);
+                        
                         DestroyObject(this.gameObject);
 
                     }

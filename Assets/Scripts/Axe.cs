@@ -4,8 +4,12 @@ using UnityEngine;
 
 public class Axe : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
+    public GameObject textPrefab;
+    public Transform textSpwLoc;
+
+
+    // Use this for initialization
+    void Start () {
 		
 	}
 	
@@ -25,7 +29,10 @@ public class Axe : MonoBehaviour {
                     if (hit.transform.gameObject.name == "Axe")
                     {
                         Tree.hasAxe = true;
-                       
+
+
+                        Instantiate(textPrefab, textSpwLoc.position, textSpwLoc.rotation);
+                        
 
                         DestroyObject(this.gameObject);
 
