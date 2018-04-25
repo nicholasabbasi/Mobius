@@ -76,8 +76,14 @@ Sheriff of the town. Killed Rick to get the chalice. Is stuck in the mines, watc
 # Level Design
 Again, based off of the podcast. This design is mostly centered around a western town that has been solely inhabited by the residents alone for decades. The town was a former diamond mine, but the vein ran out and the town is desperate to find more to bring prosperity back. This, along with the isolation has lead diamonds to become the only currency, and to have as much value as a slice of bread per carat of diamond. 
 
+# AI 
+NavMesh on NPC wandering in town. FSM on events (locker puzzle, blade trap, skeleton stopping, bomb open tunnel block). Path finder on mine cart. Flocking for fish in pond. 
+
+
 # Physics
 We use mostly rigid body physics for general movement, but also use some particle physics for explosions, wind/air movement and some bug simulations (Repelled by light). Hinge joint for trap animations, colliders for triggers and orther objects, fix joint to link objects together. 
+
+
 
 # Sound
 Game review for sound: Legend of Zelda
