@@ -2,19 +2,23 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-public class TextHandler: Singleton<TextHandler> {
+public class TextHandler: MonoBehaviour {
 
     public static TextHandler INSTANCE;
     
     // Only required for singleton.
-    protected override TextHandler Instance {
+    protected TextHandler Instance {
         get { return INSTANCE; }
         set { INSTANCE = value; }
     }
 
+    private void Awake() {
+        Instance = this;
+    }
+
     public GameObject Panel;
     public Text Text;
-
+    
     private void Start() {
         Text.transform.SetParent(null);
         LeaveChat();
@@ -56,6 +60,10 @@ public class TextHandler: Singleton<TextHandler> {
     }
 
     private void ClearText() {
+        if (Panel == null) {
+            return;
+        }
+        
         foreach (Transform child in Panel.transform) {
             Destroy(child.gameObject);
         }

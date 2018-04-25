@@ -17,6 +17,11 @@ public abstract class CHDialog: MonoBehaviour {
     protected void StartDialog(FirstPersonController controller) {
         UpdateText();
         _controller = controller;
+
+        if (_controller == null) {
+            return;
+        }
+        
         _controller.enabled = false;
     }
     

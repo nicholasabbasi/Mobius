@@ -69,8 +69,10 @@
           <e p="Bomb.cs" t="Include" />
           <e p="CameraFacingBillboard.cs" t="Include" />
           <e p="Chase.cs" t="Include" />
+          <e p="Chopping.cs" t="Include" />
           <e p="createobj.cs" t="Include" />
           <e p="Cup.cs" t="Include" />
+          <e p="DestroyObj.cs" t="Include" />
           <e p="Dialog" t="Include">
             <e p="CHDialog.cs" t="Include" />
             <e p="ClickDialog.cs" t="Include" />
@@ -120,6 +122,7 @@
           <e p="OrderedWaypoint.cs" t="Include" />
           <e p="ReloadScene.cs" t="Include" />
           <e p="RockSpawning.cs" t="Include" />
+          <e p="SpawnNotice.cs" t="Include" />
           <e p="spawnOnClick.cs" t="Include" />
           <e p="SpawnText.cs" t="Include" />
           <e p="TakeCross.cs" t="Include" />
@@ -135,6 +138,12 @@
           </e>
           <e p="Waypoint.cs" t="Include" />
           <e p="Win.cs" t="Include" />
+        </e>
+        <e p="soundtrack" t="Include">
+          <e p="Audio Managment" t="Include">
+            <e p="AudioManager.cs" t="Include" />
+            <e p="SwitchMusicTrigger.cs" t="Include" />
+          </e>
         </e>
         <e p="Standard Assets" t="Include">
           <e p="Characters" t="Include">
