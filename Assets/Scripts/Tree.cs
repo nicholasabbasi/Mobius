@@ -7,6 +7,11 @@ public class Tree : MonoBehaviour {
     public GameObject textPrefab;
     public GameObject crossPrefab;
     public Transform crossSpwLoc;
+
+    public GameObject AxePrefab;
+    public Transform AxeSpwLoc;
+
+
     float textTime;
     float chopingTime;
     public static bool hasAxe;
@@ -37,6 +42,7 @@ public class Tree : MonoBehaviour {
 
         if(Chop == true)
         {
+            Instantiate(AxePrefab, AxeSpwLoc.position, AxeSpwLoc.rotation);
             GetComponent<AudioSource>().Play();
             chopingTime -= Time.deltaTime;
             if(chopingTime <= 0)
