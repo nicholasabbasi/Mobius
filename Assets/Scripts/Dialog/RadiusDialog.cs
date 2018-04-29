@@ -7,6 +7,11 @@ public class RadiusDialog: CHDialog {
 		if (!other.CompareTag("Player")) return;
 		var controller = other.GetComponent<FirstPersonController>();
 		
-		StartDialog(controller);
+		print(controller);
+		
+		// Why?
+		if (controller != null) {
+			StartDialog(controller);
+		}
 	}
 }
