@@ -9,18 +9,10 @@ public abstract class CHDialog: MonoBehaviour {
 
     private FirstPersonController _controller;
 
-    // Use this for initialization
-    private void Start () {
-        _tree = new DialogTree(CharacterName);
-    }
-
     protected void StartDialog(FirstPersonController controller) {
-        UpdateText();
+        _tree = new DialogTree(CharacterName);
         _controller = controller;
-
-        if (_controller == null) {
-            return;
-        }
+        UpdateText();
         
         _controller.enabled = false;
     }
