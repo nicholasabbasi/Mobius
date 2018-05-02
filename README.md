@@ -115,6 +115,62 @@ Under Ground: Player has to sovle puzzle to reach the room with the Chalice to s
 		2) Use the password from NPCs unpper ground to open correct locker doors to find the key to unlock a gate
 		3) Go in the final room to click on the Chalice to spawn the teleportor without being attacked by skeleton
 
+# Playtesting
+These are the all the notes from our two playtesting sessions for BETA and ALPHA releases taken from playtester observations:
+
+BETA PLAY TESTING NOTES:
+
+Priority:
+* Add a "click to begin" at the start
+* Add a skip option to skip intro
+* Make controls more intuitive, not sure how. Maybe show controls somewhere.
+* End explosion or maybe do something else with it
+* Adjust lighting (warmer) (nick)
+* Error where if you die from an NPC and try to initiate dialog again, the game freezes
+* Reduce texture detail in places (nick)
+* More hints as to what to do
+* Make death more apparent [like a "you died"]
+* Add more "mining things" like some rocks on the floor in the quarry cave. (nick)
+* Edit timer
+* Add more hills to the map, too flat (nick)
+* Lever interaction, indicate it's been used. I also suggest put it on a wall instead of the floor.
+
+Suggestions:
+* Maybe add a map display on a key press?
+* Maybe tweak field of view?
+* If player is too close to locker, it will not open. Maybe edit this?
+* Collision on falling rocks with the ground, maybe have them kill the player? not sure though if should though
+* Let the player made mistakes a little? like a few tires at something?
+* More clear indications to where the player should go?
+* Somehow make it less easy to die from lockers?
+* Make cart ridable?
+
+ALPHA PLAY TESTING NOTES:
+
+All alpha notes:
+* Edit numbers to work with numbers in dialog; pressing 1 on the keyboard -> dialog option 1
+* Indicate better where the player appears in relation to the map.
+* More things to do while walking around
+* Fix timer
+* Skippable intro text
+* Add markers to let player know where to go
+* Indicate death better
+* Give player controls
+* Fix dialog bug (on death; dialog again crashes game)
+* Make puzzles more interactive
+* Make bomb and axe glow
+* Better player control, less/better step sounds
+* add more text to puzzles
+* add more purpose to rocks
+* Teleport option
+* Inventory
+* Delete pill NPCs
+* Fix trees; add collision; less rotation
+* Give puzzles more purpose
+* Make more things/items glow
+* Make items that were grabbed indicate they were grabbed
+* Add title before intro text
+
 
 # Wrap-Up
 ### What you are most proud of about your game?
@@ -124,9 +180,7 @@ We had to make some large changes when it came to the scope of the game. We didn
 ### What changes you made to your original game design for playability reasons and why?
 There was originally supposed to be a room in between deaths to punish players more for death, but since the player dies so often it was too punishing to keep in the game. Especially when we didn't add save points to the game, walking back to where you died is punishment enough.
 ### What did you learn from your playtesters? What changes did you make to your game as a result of the playtesting?
-Besides bug fixes that needed to be done (Talking to a NPC after dying would fail), we found that the timer took too long. This led to players easily being able to complete without feeling much of a time pressure. 
-
-We also had 
+From our playtesting we were able to find out a lot of aspects of our game that the playtester was able to key into that we would have not seen through our perspective as the designers. Things that the playtester could let us know about that we were not seeing because we were so familiar with the game. Things like how intuitive aspects felt to the player and how they may have been confused by what we thought was obvious due to us having already known about it. This lead us to make a few changes that were able to improve the overall quality of the game. To be more specific: we make bug fixes that needed to be done like fixing a bug where talking to a NPC after dying would fail and potentially crash the game. We found that the timer took too long. This led to players easily being able to complete without feeling much of a time pressure. We edited this to the player would feel more urgency to the situation at hand. Other notes that were taken from the playtesting sessions were also applied to our game in part, things that we thought needed much work. Overall, the playtesting lead to our game playing better than before.
 ### What you would do next if you had more time?
 More NPC work and more puzzles in the underground. Each NPC should feel like a character in the town with an individual character, instead of the non-developed spoon-feeding dialogue we have now. The puzzles should be long enough that the game takes the full 10 minutes but only with good routing and puzzle solving.
 ### What you would do differently next time?
